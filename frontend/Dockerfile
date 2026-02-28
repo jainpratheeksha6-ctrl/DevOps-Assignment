@@ -7,9 +7,11 @@ RUN npm install
 
 COPY . .
 
-# Accept build argument for API URL
-ARG NEXT_PUBLIC_API_URL=http://localhost:8000
-ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+# Accept API URL from docker build
+ARG NEXT_PUBLIC_API_URL
+
+# Create env file used by Next.js
+RUN echo "NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL" > .env.production
 
 RUN npm run build
 

@@ -1,0 +1,57 @@
+{
+  "backend_service_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "devopsapp-dev-backend-service"
+  },
+  "backend_task_definition_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ecs:ap-south-1:359062857005:task-definition/devopsapp-dev-backend:1"
+  },
+  "ecr_backend_repository_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "359062857005.dkr.ecr.ap-south-1.amazonaws.com/devopsapp-dev-backend"
+  },
+  "ecr_frontend_repository_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "359062857005.dkr.ecr.ap-south-1.amazonaws.com/devopsapp-dev-frontend"
+  },
+  "ecs_cluster_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ecs:ap-south-1:359062857005:cluster/devopsapp-dev-cluster"
+  },
+  "ecs_cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "devopsapp-dev-cluster"
+  },
+  "environment": {
+    "sensitive": false,
+    "type": "string",
+    "value": "dev"
+  },
+  "frontend_service_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "devopsapp-dev-frontend-service"
+  },
+  "frontend_task_definition_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ecs:ap-south-1:359062857005:task-definition/devopsapp-dev-frontend:1"
+  },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ap-south-1"
+  },
+  "security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0b9db7448b885e705"
+  }
+}
